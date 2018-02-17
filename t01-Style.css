@@ -1,3 +1,7 @@
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .opste_info{
   position: fixed;
   width: 20%;
@@ -6,19 +10,34 @@
   left: 0;
   top: 0;
 
-  background-color: red;
+  text-align: center;
+  line-height: 30px;
+
+  background-color: white;
+
+  -webkit-box-shadow: inset -11px -1px 23px -6px rgba(0,0,0,0.4);
+  -moz-box-shadow: inset -11px -1px 23px -6px rgba(0,0,0,0.4);
+  box-shadow: inset -11px -1px 23px -6px rgba(0,0,0,0.4);
+}
+
+.opste_info img {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
 }
 
 .prezentacioni{
   position: fixed;
   width: 80%;
   height: 90vh;
-
+  overflow: hidden;
   right: 0;
   top: 0;
-
-  background-color: green;
+  background-color: white;
 }
+
+
 
 .navigacija{
   position: fixed;
@@ -28,7 +47,7 @@
   right: 0;
   bottom: 0;
 
-  background-color: yellow;
+  background-color: white;
 }
 
 .navigacija p{
@@ -37,27 +56,294 @@
   float: left;
 
   font-size: 25px;
+  font-weight: 400;
   line-height: 10vh;
   text-align: center;
   margin: 0;
   cursor: crosshair;
+
+  transition: 0.3s;
+}
+
+.navigacija p:hover{
+  transform: scale(1.2);
+  font-weight: 700;
 }
 
 .prez_bubble{
-  width: 100%;
+  width: 25%;
   height: 90vh;
   overflow: scroll;
 
   float: left;
-
-  border: 1px solid black;
 }
 
+/*CONTACT*/
+
+.contact_btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 52px;
+  border-top: 4px solid black;
+  background-color: black;
+  color: white;
+  cursor: crosshair;
+
+  transition: 0.3s;
+}
+
+.contact_btn:hover{
+  background-color: white;
+  color: black;
+}
+
+.wide_container {
+  position: absolute;
+  top: 0;
+  width: 400%;
+}
+
+.klir {
+  clear: both;
+}
+
+#prez_skills h3 {
+  width: 100%;
+  text-align: left;
+  margin: 40px 2.5% 0 2.5%;
+}
+
+.jedan_skill_logo{
+  width: 15%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-align: center;
+  margin-top: 5vh;
+  float: left;
+}
+
+.jedan_skill_logo img {
+  width: 70px;
+}
+
+.jedan_skill_logo p{
+  width: 100%;
+  margin 0;
+  text-align: center;
+}
+
+/*SKILLOVI*/
+.jedan_skill{
+  position: relative;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  height: 15vh;
+}
+
+.jedan_skill img{
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.jedan_skill p{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.progres_skilla{
+  position: absolute;
+  top: 50%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.sto_procenata{
+  width: 100%;
+  height:4px;
+  background-color: #eaebeb;
+  position: absolute;
+  top: 50%;
+  border-radius: 2px;
+}
+
+/*UCC ZGRADICE*/
+.ucc_zgradice{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 50vh;
+  overflow: hidden;
+  background-color: white;
+}
+
+.ucc_zgradice img{
+  position: absolute;
+}
+
+#genex{
+  bottom: 0;
+  left: 80%;
+  animation-name: genexanime;
+  animation-duration: 29s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes genexanime {
+    0% {left: 80%;}
+    50% {left: 100%;}
+    100% {left: 8%;}
+}
+
+#ambasada{
+  bottom: 0;
+  left: 20%;
+  animation-name: ambasadaanime;
+  animation-duration: 26s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes ambasadaanime {
+    0% {left: 20%;}
+    50% {left: 65%;}
+    100% {left: 20%;}
+}
+
+#skupstina{
+  bottom: 0;
+  left: 30%;
+  animation-name: skupstinaanime;
+  animation-duration: 37s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes skupstinaanime {
+    0% {left: 30%;}
+    50% {left: 50%;}
+    100% {left: 30%;}
+}
+
+#usce{
+  bottom: 0;
+  left: 20%;
+  animation-name: usceanime;
+  animation-duration: 32s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes usceanime {
+    0% {left: 20%;}
+    50% {left: 40%;}
+    100% {left: 20%;}
+}
+
+#msu{
+  bottom: 0;
+  left: 50%;
+  animation-name: msuanime;
+  animation-duration: 32s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes msuanime {
+    0% {left: 50%;}
+    50% {left: 80%;}
+    100% {left: 50%;}
+}
+
+#beogradjanka{
+  bottom: 0;
+  left: 80%;
+  animation-name: beogradjankaanime;
+  animation-duration: 52s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes beogradjankaanime {
+    0% {left: 80%;}
+    50% {left: 100%;}
+    70% {left: 70%;}
+    100% {left: 80%;}
+}
+
+#istocnakapija{
+  bottom: 0;
+  left: 10%;
+  animation-name: istocnakapijaanime;
+  animation-duration: 32s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes istocnakapijaanime {
+    0% {left: 10%;}
+    50% {left: 30%;}
+    70% {left: 20%;}
+    100% {left: 10%;}
+}
+
+#arena{
+  bottom: 0;
+  left: 0%;
+  animation-name: arenaanime;
+  animation-duration: 42s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes arenaanime {
+    0% {left: 0%;}
+    50% {left: 30%;}
+    70% {left: 20%;}
+    100% {left: 0%;}
+}
+#toranj{
+  bottom: 0;
+  left: 80%;
+  animation-name: toranjanime;
+  animation-duration: 42s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes toranjanime {
+    0% {left: 80%;}
+    50% {left: 90%;}
+    70% {left: 85%;}
+    100% {left: 80%;}
+}
 /*EDUCATION*/
 
+.scroll_item{
+}
+
+.jedno_obrazovanje{
+  position: relative;
+  overflow: hidden;
+}
+.jedno_obrazovanje h2 img {
+  height: 50px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 .jedno_obrazovanje h2{
-  font-size: 50px;
-  line-height: 52px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
@@ -65,10 +351,37 @@
 }
 
 .jedno_obrazovanje h2 + p{
-  font-size: 35px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
   line-height: 40px;
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
-  margin: 0; 
+  margin: 0;
+}
+
+.jedno_obrazovanje h2 + p + p{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  width: 43px;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 2%;
+
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.vremenska_linija{
+  position: absolute;
+  width: 4px;
+  height: 400px;
+  background-color: black;
+  margin-left: 3%;
+  z-index: -5;
 }
